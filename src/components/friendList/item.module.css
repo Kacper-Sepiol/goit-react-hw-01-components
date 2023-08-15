@@ -1,0 +1,7 @@
+.item {
+  background-color: rgb(107, 240, 204);
+  width: 250px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
