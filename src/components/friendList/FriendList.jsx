@@ -1,4 +1,3 @@
-import friends from '../friends.json';
 import friendListCss from './friendList.module.css';
 import itemCss from './item.module.css';
 import statusCss from './status.module.css';
