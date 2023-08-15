@@ -1,7 +1,8 @@
-import friends from '../friends.json';
+import friendss from './friends.json';
 
-const FriendList = ({ friends }) => <ul class="friend-list">
+const FriendList = ({ friends }) => (
+<ul class="friend-list">
     {friends.map(friend => ())}
-</ul>;
+</ul>);
 
 export default FriendList;
