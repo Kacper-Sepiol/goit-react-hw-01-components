@@ -12,7 +12,7 @@ const FriendListItem = ({ avatar, name, isOnline }) => (
 );
 
 const FriendList = ({ friends }) => (
-  <ul class={friendListCss.friendList}>
+  <ul className={friendListCss.friendList}>
     {friends.map(friend => (
       <FriendListItem
         avatar={friend.avatar}

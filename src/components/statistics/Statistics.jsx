@@ -1,4 +1,3 @@
-import data from '../data.json';
 import statisticCss from './statistics.module.css';
 import titleCss from './title.module.css';
 import statListCss from './statList.module.css';
