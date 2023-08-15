@@ -4,16 +4,17 @@ const TransactionHistory = ({ id, type, amount, currency }) => (
   <table class="transaction-history">
     <thead>
       <tr>
-        <th>{transactions.type}</th>
-        <th>{transactions.amount}</th>
-        <th>{transactions.currency}</th>
+        <th>Type</th>
+        <th>Amount</th>
+        <th>Currency</th>
       </tr>
     </thead>
+
     <tbody>
-      <tr>
-        <td>Invoice</td>
-        <td>125</td>
-        <td>USD</td>
+      <tr key={id}>
+        <td>{type}</td>
+        <td>{amount}</td>
+        <td>{currency}</td>
       </tr>
       <tr>
         <td>Withdrawal</td>
