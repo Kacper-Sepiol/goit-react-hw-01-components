@@ -1,4 +1,16 @@
 import Profile from './profile/Profile';
-import user from '../user.json';
+import user from '../components/user.json';
 
-export const App = () => {};
+const App = () => {
+  return (
+    <Profile
+      username={user.username}
+      tag={user.tag}
+      location={user.location}
+      avatar={user.avatar}
+      stats={user.stats}
+    ></Profile>
+  );
+};
+
+export default App;
