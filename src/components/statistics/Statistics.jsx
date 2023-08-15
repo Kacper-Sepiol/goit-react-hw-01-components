@@ -11,14 +11,10 @@ const Statistics = ({ title, stats }) => {
 
       <ul className={statListCss.statList}>
         {stats.map(stat => (
-          <div>
-            <li className="item" key={stat.id}>
-              <span className={labelCss.label}>{stat.label}:</span>
-              <span className={percentageCss.percentage}>
-                {stat.percentage}%
-              </span>
-            </li>
-          </div>
+          <li className="item" key={stat.id}>
+            <span className={labelCss.label}>{stat.label}:</span>
+            <span className={percentageCss.percentage}>{stat.percentage}%</span>
+          </li>
         ))}
       </ul>
     </section>
