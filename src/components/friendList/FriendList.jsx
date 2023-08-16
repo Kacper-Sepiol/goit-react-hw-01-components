@@ -1,10 +1,8 @@
 import friendListCss from './friendList.module.css';
-import itemCss from './item.module.css';
-import statusCss from './status.module.css';
 
 const FriendListItem = ({ avatar, name, isOnline, id }) => (
-  <li className={itemCss.item}>
-    <span className={statusCss.status}>{isOnline}</span>
+  <li className={friendListCss.item}>
+    <span className={friendListCss.status}>{isOnline}</span>
     <img className="avatar" src={avatar} alt="User avatar" width="48" />
     <p className="name">{name}</p>
   </li>
