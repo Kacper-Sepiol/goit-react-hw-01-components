@@ -2,6 +2,10 @@ import PropTypes from 'prop-types';
 import statisticCss from './statistics.module.css';
 
 const Statistics = ({ title, stats }) => {
+  if (stats.length === 0) {
+    return null;
+  }
+
   return (
     <section className={statisticCss.statistic}>
       <h2 className={statisticCss.title}>{title}</h2>
