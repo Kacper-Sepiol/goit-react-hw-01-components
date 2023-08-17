@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 import statisticCss from './statistics.module.css';
 
 const Statistics = ({ title, stats }) => {
-  if (stats.length === 0) {
-    return null;
+  {
+    title && <h2 className={statisticCss.title}>{title}</h2>;
   }
 
   return (
